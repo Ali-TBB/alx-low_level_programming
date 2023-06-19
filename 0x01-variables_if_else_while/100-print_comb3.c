@@ -6,10 +6,11 @@
 */
 int main(void)
 {
-	int num1 = 0 , num2;
+	int num1 = 0, num2;
+
 	while (num1 < 9)
 	{
-		for (num2 = num1 + 1;num2 <= 9 ;num2++)
+		for (num2 = num1 + 1; num2 <= 9 ; num2++)
 		{
 			putchar(num1 + '0');
 			putchar(num2 + '0');

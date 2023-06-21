@@ -24,7 +24,7 @@ int main(void)
 		{
 			printf(", ");
 		}
-		num++
+		num += 1
 	}
 	return (0);
 }

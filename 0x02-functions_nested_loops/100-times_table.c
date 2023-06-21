@@ -2,6 +2,7 @@
 
 /**
 * print_times_table-print the 9 times tsble
+* @n: number of tabel
 * Return: Always 0
 */
 void print_times_table(int n)
@@ -19,7 +20,7 @@ void print_times_table(int n)
 			if (n3 <= 9)
 				_putchar(' ');
 				_putchar(' ');
-			else if (n3 > 99 )
+			else if (n3 > 99)
 				_putchar((n3 / 100) + '0');
 				_putchar((n3 / 10) + '0');
 			else if (n3 > 9 && n3 < 99)

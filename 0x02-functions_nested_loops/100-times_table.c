@@ -4,14 +4,14 @@
 * times_table-print the 9 times tsble
 * Return: Always 0
 */
-void times_table(void)
+void times_table(int n)
 {
 	int n1, n2, n3;
 
-	for (n1 = 0; n1 <= 9; n1++)
+	for (n1 = 0; n1 <= n; n1++)
 	{
 		_putchar('0');
-		for (n2 = 1; n2 <= 9; n2++)
+		for (n2 =  1; n2 <= n; n2++)
 		{
 			n3 = n1 * n2;
 			_putchar(',');

@@ -24,7 +24,7 @@ int main(void)
 		{
 			printf(", ");
 		}
-		num += 1
+		num += 1;
 	}
 	return (0);
 }

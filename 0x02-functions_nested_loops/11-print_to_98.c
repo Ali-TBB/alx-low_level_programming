@@ -13,14 +13,14 @@ void print_to_98(int n)
 	{
 		for (count = n; n <= 98; count++)
 		{
-			printf("%d, ", n);
+			printf("%d, ", count);
 		}
 	}
 	else if (n > 98)
 	{
 		for (count = n; n >= 98; count--)
 		{
-			printf("%d, ", n);
+			printf("%d, ", count);
 		}
 	}
 	else

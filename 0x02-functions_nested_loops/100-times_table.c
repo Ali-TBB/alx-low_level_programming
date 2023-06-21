@@ -29,7 +29,7 @@ void print_times_table(int n)
 					_putchar((n3 / 100) + '0');
 					_putchar(((n3 / 10)) % 10 + '0');
 				}
-				else if (n3 > 9 && n3 < 99)
+				else if (n3 > 9 && n3 <= 99)
 				{
 					_putchar(' ');
 					_putchar((n3 / 10) + '0');

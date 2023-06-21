@@ -18,14 +18,20 @@ void print_times_table(int n)
 			_putchar(',');
 			_putchar(' ');
 			if (n3 <= 9)
+			{
 				_putchar(' ');
 				_putchar(' ');
+			}
 			else if (n3 > 99)
+			{
 				_putchar((n3 / 100) + '0');
 				_putchar((n3 / 10) + '0');
+			}
 			else if (n3 > 9 && n3 < 99)
+			{
 				_putchar(' ');
 				_putchar((n3 / 10) + '0');
+			}
 			_putchar((n3 % 10) + '0');
 		}
 		_putchar('\n');

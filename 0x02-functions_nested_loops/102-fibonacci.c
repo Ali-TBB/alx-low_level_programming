@@ -11,14 +11,20 @@ int main(void)
 	unsigned long  fib1 = 0, fib2 = 2, sum;
 
 	while (num < 50)
+	{
 		sum = fib1 + fib2;
 		printf("%lu", sum);
 		fib1 = fib2;
 		fib2 = sum;
 		if (num == 49)
+		{
 			printf('\n');
+		}
 		else
+		{
 			printf(", ");
+		}
 		num++
+	}
 	return (0);
 }

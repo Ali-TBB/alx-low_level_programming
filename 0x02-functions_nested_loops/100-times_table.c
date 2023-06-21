@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* times_table-print the 9 times tsble
+* print_times_table-print the 9 times tsble
 * Return: Always 0
 */
-void times_table(int n)
+void print_times_table(int n)
 {
 	int n1, n2, n3;
 
@@ -25,4 +25,3 @@ void times_table(int n)
 		_putchar('\n');
 	}
 }
-

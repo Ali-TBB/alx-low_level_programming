@@ -14,5 +14,6 @@ int main(void)
 			result += num;
 		else if (num % 5 == 0)
 			result += num;
-	return (result);
+	printf("%d", result);
+	return (0);
 }

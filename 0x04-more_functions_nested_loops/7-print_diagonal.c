@@ -19,7 +19,7 @@ void print_diagonal(int n)
 		for (sp = 0; sp < n; sp++)
 		{
 			count = sp;
-			while (count >= 0)
+			while (count > 0)
 			{
 				_putchar(32);
 				count -= 1;

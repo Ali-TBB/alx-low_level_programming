@@ -6,19 +6,22 @@
  *
  * Return: void
  */
+
+
 void print_square(int size)
 {
-	int line, count;
+	int a, b;
 
-	line = size;
-	for (line = 0; line < size; line++)
+	if (size <= 0)
+		_putchar('\n');
+
+	for (a = 0; a < size; a++)
 	{
-		count = size;
-		while (count > 0)
+		for (b = 0; b < size; b++)
 		{
-			_putchar(35);
-			count -= 1;
+			_putchar('#');
 		}
 		_putchar('\n');
 	}
+
 }

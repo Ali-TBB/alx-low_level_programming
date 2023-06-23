@@ -12,7 +12,7 @@ void print_square(int size)
 	int line, count;
 
 	line = size;
-	for (line = 0; line <= size; line++)
+	for (line = 0; line < size; line++)
 	{
 		count = size;
 		while (count > 0)

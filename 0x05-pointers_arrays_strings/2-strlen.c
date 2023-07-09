@@ -8,7 +8,9 @@
 int _strlen(char *s)
 {
 	int legth;
-	for(legth = 0; *s[legth] != '\0'; legth++);
+	char a = *s;
+
+	for(legth = 0; a[legth] != '\0'; legth++);
 
 	return (legth);
 }

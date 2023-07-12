@@ -28,6 +28,7 @@ void puts_half(char *str)
 		{
 			putchar(str[b]);
 		}
+		printf("heelo");
 	}
 	putchar('\n');
 }

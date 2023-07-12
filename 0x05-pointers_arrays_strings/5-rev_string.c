@@ -2,12 +2,13 @@
 
 /**
 * rev_string-function that revers string
+* @s: char
 * Return: Always 0
 */
 void rev_string(char *s)
 {
 	int a = 0, b, c;
-	char *c;
+	char *l;
 
 	while (s[a] != '\0')
 	{
@@ -15,12 +16,12 @@ void rev_string(char *s)
 
 	}
 	c = a
-	for (b = 0; a > 0;a--;b++)
+	for (b = 0; a > 0; a--; b++)
 	{
-		s[a] = c[b];
+		s[a] = l[b];
 	}
-	for (b = 0; b < c;b++)
+	for (b = 0; b < c; b++)
 	{
-		c[b] = s[b];
+		l[b] = s[b];
 	}
 }

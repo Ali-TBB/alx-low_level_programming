@@ -1,4 +1,4 @@
-#include <stdio.h>
+##include <stdio.h>
 
 /**
 * puts_half-function print half of string
@@ -23,12 +23,11 @@ void puts_half(char *str)
 	}
 	else if (a % 2 != 0)
 	{
-		b = ((a - 1) / 2);
+		b = ((a + 1) / 2);
 		for (; b < a; b++)
 		{
 			putchar(str[b]);
 		}
-		printf("heelo");
 	}
 	putchar('\n');
 }

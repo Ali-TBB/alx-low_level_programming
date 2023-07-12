@@ -16,7 +16,7 @@ void rev_string(char *s)
 
 	}
 	c = a;
-	for (b = 0; a > 0; a--; b++)
+	for (b = 0; a > 0; a--, b++)
 	{
 		s[a] = l[b];
 	}

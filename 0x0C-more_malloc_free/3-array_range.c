@@ -9,7 +9,7 @@
 int *array_range(int min, int max)
 {
 	int *arr;
-	int b, a, c;
+	int b, c;
 
 	if (min > max)
 	{
@@ -17,15 +17,13 @@ int *array_range(int min, int max)
 	}
 	else
 	{
-		b = max - min;
-		arr = malloc(sizeof(int)*(b + 1));
+		b = max - min + 1;
+		arr = malloc(sizeof(int)*b);
 		c = 0;
-		a = min;
-		while (c <= b)
+		for (c = 0; min <= max; c++)
 		{
-			arr[c] = a;
-			c++;
-			a++;
+			arr[c] = min;
+			min++
 		}
 		return (arr);
 	}

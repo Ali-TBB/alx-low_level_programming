@@ -22,9 +22,8 @@ int *array_range(int min, int max)
 		c = 0;
 		for (c = 0; min <= max; c++)
 		{
-			arr[c] = min;
-			min++;
+			arr[c] = min++;
 		}
-		return (arr);
+	return (arr);
 	}
 }

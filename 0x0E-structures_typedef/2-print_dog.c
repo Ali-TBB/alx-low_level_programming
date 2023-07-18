@@ -6,25 +6,25 @@
  */
 void print_dog(struct dog *d)
 {
-	if (my_dog.name != NULL)
+	if (d->name != NULL)
 	{
-		printf("Name: %d\n", my_dog.name);
+		printf("Name: %d\n", d->name);
 	}
 	else
 	{
 		printf("Name: (nil)\n");
 	}
-	if (my_dog.age != NULL)
+	if (d->age != NULL)
 	{
-		printf("Age: %d\n", my_dog.age);
+		printf("Age: %d\n", d->age);
 	}
 	else
 	{
 		printf("Age: (nil)\n");
 	}
-	if (my_dog.owner != NULL)
+	if (d->owner != NULL)
 	{
-		printf("Owner: %d\n", my_dog.owner);
+		printf("Owner: %d\n", d->owner);
 	}
 	else
 	{

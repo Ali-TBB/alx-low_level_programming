@@ -8,17 +8,13 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int a, i;
+	int i;
 
-	if (cmp == NULL || size <= 0)
-	{
-		return (-1);
-	}
-	else
+	if (cmp != NULL || size > 0 || array != NULL)
 	{
 		for (i = 0; i < size; i++)
 			if (cmp(array[i]) != 0)
-				a++;
+				return (i);
 	}
-	return (a);
+	return (-1);
 }

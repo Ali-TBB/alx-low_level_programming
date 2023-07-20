@@ -1,8 +1,9 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - adds all the numbers
+ * print_strings- adds all the numbers
  * @n: the number of parameters passed
+ *@separator: string to be printed between the strings
  * Return: Always 0
  */
 void print_strings(const char *separator, const unsigned int n, ...)

@@ -1,9 +1,9 @@
 #include "variadic_functions.h"
 /**
- * sum_them_all-funtion that sum all argement
- * @n: the number of arg
- * Return: the sum
- */
+* sum_them_all-funtion that sum all argement
+* @n: the number of arg
+* Return: the sum
+*/
 
 int sum_them_all(const unsigned int n, ...)
 {

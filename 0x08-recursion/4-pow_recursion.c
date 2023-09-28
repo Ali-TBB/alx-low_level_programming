@@ -2,7 +2,7 @@
 /**
  * _pow_recursion - function that returns the value of x raised to the power of y
  * @y: power of x
- * @x: int 
+ * @x: int
  * Return: factorial of n
 */
 

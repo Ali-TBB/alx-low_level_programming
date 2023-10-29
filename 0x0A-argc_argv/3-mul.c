@@ -9,15 +9,16 @@
 
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int sum = 0, i;
+	int i;
 
 	if (argc > 2)
 	{
-		for (i = 1; i < argc; i++)
+        int mul = atoi(argv[1]);
+		for (i = 2; i < argc; i++)
 		{
-			sum *= atoi(argv[i]);
+			mul *= atoi(argv[i]);
 		}
-		printf("%d\n", sum);
+		printf("%d\n", mul);
 	}
 	else
 	{

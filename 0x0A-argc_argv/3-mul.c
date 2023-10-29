@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
-* main - printn the sum of arguments
+* main - printn the multiplies of arguments
 * @argc: number of arguments
 * @argv: array of arguments
 * Return: Always 0 if error return 1

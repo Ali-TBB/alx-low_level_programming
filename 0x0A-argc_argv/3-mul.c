@@ -13,7 +13,8 @@ int main(int argc, char *argv[] __attribute__((unused)))
 
 	if (argc > 2)
 	{
-        int mul = atoi(argv[1]);
+		int mul = atoi(argv[1]);
+
 		for (i = 2; i < argc; i++)
 		{
 			mul *= atoi(argv[i]);

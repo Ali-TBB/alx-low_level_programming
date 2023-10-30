@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", coins);
 	}
-	else if (num < 0 && (argc != 2))
+	else if (num < 0 || (argc != 2))
 	{
 		printf("Error\n");
 	}

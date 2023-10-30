@@ -9,18 +9,20 @@
 */
 int main(int argc, char *argv[])
 {
-	int num, i = 0, coins = 0, j, tru;
+	int num, i = 0, coins = 0, j, tru = 1;
 	int arr[] = {25, 10, 5, 2, 1};
-	char *arg = argv[1];
 
-	for (j = 0; arg[j]; j++)
+	if (argc == 2)
 	{
-		if (!isdigit(arg[j]))
-			tru = 0;
-		else
-			tru = 1;
-	}
+		char *arg = argv[1];
+		for (j = 0; arg[j]; j++)
+		{
+			if (!isdigit(arg[j]))
+				tru = 0;
+                break;
+		}
 	num = atoi(argv[1]);
+	}
 	if (num <= 0 && (argc == 2) && tru)
 	{
 		printf("0\n");
@@ -42,10 +44,11 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", coins);
 	}
-	else if (num < 0 || (argc != 2))
+	else if (num < 0 || (argc != 2) || !tru)
 	{
 		printf("Error\n");
 	}
 	return (0);
+    printf("%d\n", argc);
 
 }

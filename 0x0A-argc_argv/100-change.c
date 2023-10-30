@@ -18,18 +18,18 @@ int main(int argc, char *argv[])
 
 		for (j = 0; arg[j]; j++)
 		{
-			if (!isdigit(arg[j]))
+			if (!isdigit(arg[j]) && arg[0] != '-')
 				tru = 0;
 			break;
 		}
 	num = atoi(argv[1]);
 	}
-	if (num <= 0 && (argc == 2) && tru)
+	if (num <= 0 && tru == 1 && argc == 2)
 	{
 		printf("0\n");
 
 	}
-	else if (num > 0 && (argc == 2) && tru)
+	else if (num > 0 && tru == 1 && argc == 2)
 	{
 		while (num  > 0)
 		{
@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", coins);
 	}
-	else if (num < 0 || (argc != 2) || !tru)
+	else if ((argc != 2) || tru == 0)
 		printf("Error\n");
 	return (0);
 }

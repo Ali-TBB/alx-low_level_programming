@@ -15,11 +15,12 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		char *arg = argv[1];
+
 		for (j = 0; arg[j]; j++)
 		{
 			if (!isdigit(arg[j]))
 				tru = 0;
-                break;
+			break;
 		}
 	num = atoi(argv[1]);
 	}
@@ -38,17 +39,11 @@ int main(int argc, char *argv[])
 				coins++;
 			}
 			else
-			{
 				i++;
-			}
 		}
 		printf("%d\n", coins);
 	}
 	else if (num < 0 || (argc != 2) || !tru)
-	{
 		printf("Error\n");
-	}
 	return (0);
-    printf("%d\n", argc);
-
 }

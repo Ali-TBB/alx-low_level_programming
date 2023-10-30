@@ -8,7 +8,7 @@
 * Return: Always 0 if error return 1
 */
 
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
 	int i, j, sum = 0;
 

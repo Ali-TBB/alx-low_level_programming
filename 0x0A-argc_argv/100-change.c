@@ -9,16 +9,24 @@
 */
 int main(int argc, char *argv[])
 {
-	int num, i = 0, coins = 0;
+	int num, i = 0, coins = 0, j, tru;
 	int arr[] = {25, 10, 5, 2, 1};
+	char *arg = argv[1];
 
+	for (j = 0; arg[j]; j++)
+	{
+		if (!isdigit(arg[j]))
+			tru = 0;
+		else
+			tru = 1;
+	}
 	num = atoi(argv[1]);
-	if (num <= 0 && (argc == 2) && isdigit(num))
+	if (num <= 0 && (argc == 2) && tru)
 	{
 		printf("0\n");
 
 	}
-	else if (num > 0 && (argc == 2) && isdigit(num))
+	else if (num > 0 && (argc == 2) && tru)
 	{
 		while (num  > 0)
 		{

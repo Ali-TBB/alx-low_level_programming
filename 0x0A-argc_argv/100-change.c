@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <ctype.h>
 /**
 * main - prints the minimum number of coins
 * @argc: number of arguments
@@ -12,12 +13,12 @@ int main(int argc, char *argv[])
 	int arr[] = {25, 10, 5, 2, 1};
 
 	num = atoi(argv[1]);
-	if (num < 0 && (argc == 2))
+	if (num <= 0 && (argc == 2) && isdigit(num))
 	{
 		printf("0\n");
 
 	}
-	else if (num > 0 && (argc == 2))
+	else if (num > 0 && (argc == 2) && isdigit(num))
 	{
 		while (num  > 0)
 		{

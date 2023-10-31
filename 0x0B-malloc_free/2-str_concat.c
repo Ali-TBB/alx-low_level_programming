@@ -34,8 +34,10 @@ char *str_concat(char *s1, char *s2)
 		if (i < len1)
 		strcont[i] = s1[i];
 		else
+		{
 		strcont[i] = s2[a];
-        a++;
+		a++;
+		}
 	}
 	return (strcont);
 }

@@ -25,11 +25,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (len2 <= n)
 	{
-		len = len2 + len1 + 1;
+		len = len2 + len1;
 	}
 	else
 	{
-		len = len1 + n + 1;
+		len = len1 + n;
 	}
 	str = malloc(sizeof(unsigned int) * len);
 	if (str == NULL)

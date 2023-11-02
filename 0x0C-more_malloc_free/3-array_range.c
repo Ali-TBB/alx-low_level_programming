@@ -2,10 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * string_nconcat - function that concatenates two strings.
- * @s1: string 1.
- * @s2: string 2.
- * @n: number of concat string
+ * *array_range - function that creates an array of integers..
+ * @min: start number.
+ * @max: end number.
  * Return: concat string , (NULL) if fails.
  */
 int *array_range(int min, int max)
@@ -23,7 +22,7 @@ int *array_range(int min, int max)
 	for (i = 0; min <= max; i++)
 	{
 		arr[i] = min;
-        min++;
+		min++;
 	}
 	return (arr);
 

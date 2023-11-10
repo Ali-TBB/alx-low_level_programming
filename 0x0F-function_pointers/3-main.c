@@ -11,8 +11,6 @@
  */
 int main(int ac, char **av)
 {
-	int a, b;
-	int result;
 	int (*opr)(int, int);
 
 
@@ -24,15 +22,12 @@ int main(int ac, char **av)
 			printf("Error\n");
 			exit(99);
 		}
-		a = atoi(av[1]);
-		b = atoi(av[3]);
-		result = get_op_func(av[2])(a, b);
 	}
 	else
 	{
 		printf("Error\n ");
 		exit(98);
 	}
-	printf("%d\n", result);
+	printf("%d\n", opr(atoi(av[1]), atoi(av[3])));
 	return (0);
 }

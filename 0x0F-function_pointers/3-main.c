@@ -1,7 +1,7 @@
 #include "3-calc.h"
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 /**
  * main - returns the sum of a and b
  *
@@ -11,22 +11,15 @@
  */
 int main(int ac, char **av)
 {
-	int a, b, i = 0;
+	int a, b;
 	int result;
-	char *opr[5] = {"+", "-", "/", "%", "*"};
+	int (*opr)(int, int);
 
 
 	if (ac == 4)
 	{
-		while (i < 5)
-		{
-			if (strcmp(av[2], opr[i]) == 0)
-			{
-				break;
-			}
-			i++;
-		}
-		if (i == 5)
+		opr = get_op_func(av[2]);
+		if (!opr)
 		{
 			printf("Error\n");
 			exit(99);

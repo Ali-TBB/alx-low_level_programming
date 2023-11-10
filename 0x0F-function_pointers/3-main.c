@@ -11,23 +11,22 @@
  */
 int main(int ac, char **av)
 {
-	int (*opr)(int, int);
+	int (*oprt)(int, int);
 
-
-	if (ac == 4)
+	if (ac != 4)
 	{
-		opr = get_op_func(av[2]);
-		if (!opr)
-		{
-			printf("Error\n");
-			exit(99);
-		}
-	}
-	else
-	{
-		printf("Error\n ");
+		printf("Error\n");
 		exit(98);
 	}
-	printf("%d\n", opr(atoi(av[1]), atoi(av[3])));
+
+	oprt = get_op_func(av[2]);
+
+	if (!oprt)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	printf("%d\n", oprt(atoi(av[1]), atoi(av[3])));
 	return (0);
 }

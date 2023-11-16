@@ -28,3 +28,18 @@ list_t *add_node(list_t **head, const char *str)
 	*head = new_head;
 	return (new_head);
 }
+/**
+ * _strlen - length of a string
+ * @str: string
+ *
+ * Return: length
+ */
+unsigned int _strlen(char *str)
+{
+	unsigned int i;
+
+	for (i = 0; str[i]; i++)
+		;
+	return (i);
+}
+

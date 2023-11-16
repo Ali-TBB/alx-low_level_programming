@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - check the code
+ * list_len - size of list
  * @h: ponter to first lists
  * Return: size of list.
  */

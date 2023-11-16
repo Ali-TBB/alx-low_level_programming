@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stddef.h>
+#include <string.h>
 
 
 /**
@@ -16,7 +17,7 @@ size_t print_list(const list_t *h)
 	if (h->str == NULL)
 		printf("[0] (null)");
 	else
-		printf("[%u] %s", h->len, h->str);
+		printf("[%lu] %s", strlen(h->str), h->str);
 	h = h->next;
 	i++;
 	}

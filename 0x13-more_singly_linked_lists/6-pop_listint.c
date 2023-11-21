@@ -3,7 +3,7 @@
 /**
  * pop_listint - delete head of linkrd list
  * @head: linked list.
- * Return: size of list.
+ * Return: data of node.
  */
 int pop_listint(listint_t **head)
 {

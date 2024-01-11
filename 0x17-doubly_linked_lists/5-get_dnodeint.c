@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * get_dnodeint_at_index -  free doubly linked list.
@@ -9,6 +10,11 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
     dlistint_t *node;
+    if (head == NULL)
+        return (NULL);
+    node = malloc(sizeof(dlistint_t));
+    if (node == NULL)
+        return (NULL);
     node = head;
     while (index >= 0)
     {

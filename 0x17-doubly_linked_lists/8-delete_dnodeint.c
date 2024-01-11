@@ -5,9 +5,9 @@
  * delete_dnodeint_at_index - delete node at a given position in a
  *                            doubly linked list.
  *
- * @h: Pointer to the pointer to the head of the doubly linked list.
- * @idx: Index at which the new node should be inserted.
- * Return: Address of the new node, or NULL if insertion failed.
+ * @head: Pointer to the pointer to the head of the doubly linked list.
+ * @index: Index at which the node should be deleted.
+ * Return: 1 if it succeeded, -1 if it failed.
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {

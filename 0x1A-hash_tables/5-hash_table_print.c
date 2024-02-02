@@ -13,6 +13,8 @@ void hash_table_print(const hash_table_t *ht)
 	int a = 1;
 	hash_node_t *current;
 
+	if (ht == NULL || ht->array == NULL)
+		return;
 	putchar('{');
 	for (i = 0; i < ht->size; i++)
 	{

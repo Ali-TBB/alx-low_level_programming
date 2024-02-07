@@ -179,28 +179,22 @@ void shash_table_print(const shash_table_t *ht)
  */
 void shash_table_print_rev(const shash_table_t *ht)
 {
-	int a = 1;
-	shash_node_t *current;
+	shash_node_t *tmp;
+	char a = 0;
 
 	if (ht == NULL || ht->array == NULL)
 		return;
-	current = ht->stail;
-	putchar('{');
-	while (current != NULL)
+	printf("{");
+	tmp = ht->stail;
+	while (tmp != NULL)
 	{
-		if (a)
-		{
-			printf("'%s': '%s'", current->key, current->value);
-			a = 0;
-		}
-		else
-		{
-			printf(", '%s': '%s'", current->key, current->value);
-		}
-		current = current->sprev;
+		if (a == 1)
+			printf(", ");
+		printf("'%s': '%s'", tmp->key, tmp->value);
+		a = 1;
+		tmp = tmp->sprev;
 	}
-	putchar('}');
-	putchar('\n');
+	printf("}\n");
 }
 /**
  * shash_table_delete - Deletes a sorted
